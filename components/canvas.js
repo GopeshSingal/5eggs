@@ -7,7 +7,7 @@ export default class Canvas extends React.Component {
         let row = [];
 
         for (let i = 0; i < 10; i++) {
-            row.push(<Row />);
+            row.push(<Row color={this.props.color} key={i}/>);
         }
         return (
             <View> {row} </View>

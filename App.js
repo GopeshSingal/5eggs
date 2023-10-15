@@ -1,18 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableWithoutFeedback, TouchableNativeFeedback, TouchableHighlight, TouchableOpacity, View, Image, SafeAreaView } from 'react-native';
-import CustomText from './components/customtext';
-import Pixel from './components/pixel';
-import Row from './components/row';
-import Canvas from './components/canvas';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { useState } from 'react';
 import Pallet from './components/pallet';
+import Pixel from './components/pixel';
 
 export default function App() {
-  // console.log(require("./assets/icon.png"));
+  const [color, setColor] = useState(styles.container.backgroundColor);
   return (
     <SafeAreaView  style={styles.container}>
-      <Text>Hello React Native</Text>
-      <Pallet selectedColor={"white"}/>
-      {/* <Pixel></Pixel> */}
+      <Text >Hello React Native</Text>
+      <Pallet/>
     </SafeAreaView  >
   );
 }
@@ -22,6 +18,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 });

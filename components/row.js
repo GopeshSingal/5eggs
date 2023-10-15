@@ -7,7 +7,7 @@ export default class Row extends React.Component {
         let pixels = [];
 
         for (let i = 0; i < 10; i++) {
-            pixels.push(<Pixel/>);
+            pixels.push(<Pixel key={i} color={this.props.color}/>);
         }
         return (
             <View style={{flexDirection: "row"}}> {pixels} </View>
