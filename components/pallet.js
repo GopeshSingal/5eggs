@@ -4,6 +4,7 @@ import Canvas from "./canvas";
 import ColorPicker from "react-native-wheel-color-picker";
 import ViewShot from 'react-native-view-shot';
 
+
 export default function Pallet() {
 
     var width = Dimensions.get('window').width; //full width    
