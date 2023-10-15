@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { StyleSheet, View, Text, Pressable } from "react-native";
 import Canvas from "./canvas";
+import Color from "./color";
 import ColorPicker from "react-native-wheel-color-picker";
 
 export default function Pallet() {

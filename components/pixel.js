@@ -1,12 +1,16 @@
 import React from "react";
-import { StyleSheet, View, Text, TouchableHighlight, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 
 export default class Pixel extends React.Component {
+    state = {backgroundColor:"white"}
+    changeColor(color) {
+        this.setState({backgroundColor: color})
+        console.log(this.state.backgroundColor)
+    }
     render() {
-        
         return (
-            <TouchableOpacity>
-                <View style={styles.square} />
+            <TouchableOpacity onPress={() => this.changeColor(this.props.color)} >
+                <View style={[styles.square, {backgroundColor:this.state.backgroundColor}]} />
             </TouchableOpacity>
         )
     }
