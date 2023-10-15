@@ -6,7 +6,7 @@ export default class Row extends React.Component {
     render() {
         let pixels = [];
 
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 16; i++) {
             pixels.push(<Pixel key={i} color={this.props.color}/>);
         }
         return (
