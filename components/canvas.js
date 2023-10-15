@@ -10,7 +10,16 @@ export default class Canvas extends React.Component {
             row.push(<Row color={this.props.color} key={i}/>);
         }
         return (
-            <View> {row} </View>
+            <View style={styles.canvas}> {row} </View>
         )
     }
 }
+
+const styles = StyleSheet.create({
+    canvas: {
+      borderStyle: "solid",
+      borderWidth: 1,
+      borderColor: "black",
+      cursor: 'pointer',
+    },
+});
