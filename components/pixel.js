@@ -18,11 +18,11 @@ export default class Pixel extends React.Component {
 
 const styles = StyleSheet.create({
     square: {
-      width: 30,
-      height: 30,
+      width: 33,
+      height: 33,
       borderStyle: "solid",
-      borderWidth: 1,
-      borderColor: "black",
+      borderWidth: .5,
+      borderColor: "#A4A7A7",
       cursor: 'pointer',
     },
 });
